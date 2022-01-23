@@ -41,8 +41,7 @@ const cartReducer = (state, action) => {
       updatedItems = [...state.items];
       updatedItems[toRemoveItemIndex] = updatedItem;
     } else {
-      updatedItems = [...state.items];
-      updatedItems = updatedItems.filter((item) => item.id !== toRemoveItem.id);
+      updatedItems = state.items.filter((item) => item.id !== toRemoveItem.id);
     }
     return { items: updatedItems, totalAmount: updatedAmount };
   }
