@@ -1,0 +1,84 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form h2 {
+  margin: 10px auto;
+}
+
+.form-field {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.form-field label {
+  font-size: 1rem;
+  color: #555;
+  width: 20%;
+}
+
+.payment label {
+  width: 35%;
+}
+
+.form-field input {
+  font-size: 0.9rem;
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-field option,
+.form-field select {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  align-self: left;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #8a2b06;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin: 0 10px;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #5a1a01;
+  border-color: #5a1a01;
+  color: white;
+}
+
+.button__alt {
+  color: #8a2b06;
+}
+
+.button {
+    color: white;
+    background-color: #8a2b06;
+}
+
+.invalid input{
+    background-color: #fcb2aa;
+    border: 2px solid #f00;
+}
+
+.error-message {
+    color: #f00;
+    margin-left: 22%;
+    margin-top: 0;
+}

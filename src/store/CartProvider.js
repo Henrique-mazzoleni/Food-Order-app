@@ -62,11 +62,16 @@ const CartProvider = (props) => {
     dispatchCartAction({ type: "REMOVE", id: id });
   };
 
+  const resetCartHandler = () => {
+    dispatchCartAction({})
+  }
+
   const cartContextObject = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
+    resetCart: resetCartHandler,
   };
 
   return (
